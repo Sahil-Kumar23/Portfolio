@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="images/logo_2.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo_2.png" class="logo">
+                <ul id="side-menu">
+                    <li>
+                        <a href="#header">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class="fas fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-container">
+                <div class="profile-circle2"></div>
+                <div class="header_txt">
+                    <p>Java Full Stack Developer</p>
+                    <h1>Hi, I'm <span>Sahil Kumar</span> <br>from Jammu,J&K</h1>
+                    <a href="images/Sahil_Kumar_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="profile-circle"></div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/pic.jpg">
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a results-oriented Computer Science Engineering graduate from Chandigarh University with a CGPA of 7.37. My technical skills encompass Java, SQL, Networking, Kali Linux, Spring, Postman, Git, and React. Passionate about development and problem-solving, I thrive on taking up high-performance roles that push my boundaries.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="handleClickOnAboutSubtab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="handleClickOnAboutSubtab('experience')">Experience</p>
+                        <p class="tab-links"  onclick="handleClickOnAboutSubtab('education')">Education</p>
+                        <p class="tab-links" onclick="handleClickOnAboutSubtab('certificate')">Certificate</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><b>Front-end</b></span><br>React , JavaScript , TypeScript ,BootStrap CSS, Tailwind CSS, HTML</li>
+                            <li><span><b>Back-end</b></span><br>Java , Spring Boot , Postman</li>
+                            <li><span><b>DataBase</b></span><br>SQL , MySql</li>
+                            <li><span><b>Other</b></span><br>Computer Networking , Kali Linux , API Integration , Pentration Testing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><b>06/2023 - 11/2023</b></span><br>Java Full Stack Developer at VKTechno Solutions Pvt. Ltd.</li>
+                            <li><span><b>07/2021 - 08/2021</b></span><br>Summer Tranning in Web Development from Intershala</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><b>2019 - 2023</b> </span><br>B.E in CSE from Chandigarh University</li>
+                            <li><span><b>2017 - 2019</b></span><br>12th from Mother India Secondary School,R.S.Pura</li>
+                            <li><span><b>2016 - 2017</b></span><br>10th from MSMIER School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificate">
+                        <ul>
+                            <li>
+                                <span><b>HackerRank</b></span>
+                                <br> Java (Basic) 
+                                <a href="https://www.hackerrank.com/certificates/2a8854642a36" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <br> <br>SQL (Basic) 
+                                <a href="https://www.hackerrank.com/certificates/7cfbece595a7" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </li>
+                            <li>
+                                <span><b>Intershala</b></span>
+                                <br> Web Development 
+                                <a href="https://trainings.internshala.com/s/v/8585/57b5fa0e" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </li>
+                            <li>
+                                <span><b>Coursera</b></span>
+                                <br> Object Oriented Programming in Java
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/J5NZKTE7AYRJ" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <br> <br> Java for Android
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/MHANDPTST9PG" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <br> <br> Programming Foundations with JavaScript, HTML and CSS
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/G67FWWTR5Y3U" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <br> <br> Introduction to HTML5
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/THA4B8SECKFV" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/bingeWatcher.png">
+                    <div class="layer">
+                        <h3> Binge Watcher</h3>
+                        <p> Developed a user-friendly platform using React.JS, CSS, and API integration, providing a vast collection of shows with ratings, descriptions, and trailers.</p>
+                        <a href="https://ss-crew.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/weather2.jpg">
+                    <div class="layer">
+                        <h3> Weather App</h3>
+                        <p> Created a feature-rich weather app using Java and XML in Android Studio, keeping users updated with forecasts for their current or chosen location.</p>
+                        <a href="https://github.com/Sahil-Kumar23/WeatherApp" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/quiz3.png">
+                    <div class="layer">
+                        <h3> Quiz App</h3>
+                        <p> Developed an interactive quiz application in Android Studio using Java and XML, featuring a user-friendly interface for students to answer multiple-choice questions and receive instant scoring.</p>
+                        <a href="https://github.com/Sahil-Kumar23/Quiz-Application" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/brick_breakout.png">
+                    <div class="layer">
+                        <h3> Brick Breakout Ball Game</h3>
+                        <p> In Breakout, a layer of bricks lines the top third of the screen and the goal is to destroy them all with ball.This project was developed using Eclipse IDE and Java concepts (OOPs , AWT, Swing, JFrame, JPanel etc).</p>
+                        <a href="https://github.com/Sahil-Kumar23/Breakout-Ball"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work hidden">
+                    <img src="images/pic.jpg">
+                    <div class="layer">
+                        <h3> Weather App</h3>
+                        <p>uyhbdf fdiuvnhd nobufvuhdfv njvfduyfdv kjhvfd kjbhfduoyvf kjfu hvfd njvfdu ho</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden">
+                    <img src="images/pic.jpg">
+                    <div class="layer">
+                        <h3> Weather App</h3>
+                        <p>uyhbdf fdiuvnhd nobufvuhdfv njvfduyfdv kjhvfd kjbhfduoyvf kjfu hvfd njvfdu ho</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <a href="#" id="show-btn" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left-contact">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-at"></i>sk2306067@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>8082031087</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sahil-kumar-92a118200/" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.hackerrank.com/profile/sk2306067" class="hackerrank" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                        <a href="https://leetcode.com/Sahil_Kumar_sk/" class="leetcode" target="_blank"><i class="fas fa-code"></i></a>
+                        <a href="https://github.com/Sahil-Kumar23" class="github" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="overlay" id="overlay">
+                    <div class="loader"></div>
+                </div>
+                <div class="right-contact">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg" ></span>
+                    <div id="loading" style="display: none;">Sending...</div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sahil Kumar</p>
+        </div>
+    </div>
+    <script src="main.js"></script> 
+</body>
+</html>
